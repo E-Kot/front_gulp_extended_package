@@ -1,0 +1,23 @@
+/* Connecting fonts Start
+Do not delete!
+*/
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+@import "fonts";
+/* Connecting fonts End */
+
+// Custom variables.
+$global-font-family:                            'Montserrat', sans-serif;
+$global-font-size:                               16px;
+$global-color:                                   #0F0F0F;
+
+// Theme Style
+@import "site_style";
