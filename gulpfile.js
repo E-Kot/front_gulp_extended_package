@@ -213,7 +213,7 @@ function watchFiles() {
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.img], images);
     gulp.watch([path.watch.img_svg], imgSvg);
-    gulp.watch([path.watch.img], favicon);
+    gulp.watch([path.watch.favicon], favicon);
 }
 
 function clean() {
